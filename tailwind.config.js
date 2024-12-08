@@ -18,6 +18,7 @@ export default {
       }),
       textColor: {
         Dark: "#2A254B",
+        Primary: "#4E4D93",
         Light: "#FFFFFF"
       },
       fontFamily: {
@@ -29,23 +30,23 @@ export default {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Headline_one: ['32px', {
+        Headline_two: ['32px', {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Headline_one: ['24px', {
+        Headline_three: ['24px', {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Headline_one: ['20px', {
+        Headline_four: ['20px', {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Headline_one: ['16px', {
+        Headline_five: ['16px', {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Headline_one: ['14px', {
+        Headline_six: ['14px', {
           fontWeight: '500',
           lineHeight: '150%'
         }],
