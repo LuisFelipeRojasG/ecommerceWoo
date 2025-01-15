@@ -1,8 +1,8 @@
 import React from 'react'
 
-function CardProduct() {
+function ProductCard() {
   return (
-    <div>
+    <article>
         <figure>
             <p>imagen</p>
         </figure>
@@ -13,8 +13,8 @@ function CardProduct() {
                 <p>precio</p>
             </div>
         </div>
-    </div>
+    </article>
   )
 }
 
-export default CardProduct
+export default ProductCard

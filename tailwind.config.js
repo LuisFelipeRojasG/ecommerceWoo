@@ -21,6 +21,11 @@ export default {
         Primary: "#4E4D93",
         Light: "#FFFFFF"
       },
+      colors: {
+        Dark: "#2A254B",
+        Primary: "#4E4D93",
+        Light: "#FFFFFF"
+      },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
         Open_Sans: ["Open Sans", "sans-serif"],
