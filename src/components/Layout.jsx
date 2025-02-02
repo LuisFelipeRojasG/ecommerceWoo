@@ -1,10 +1,10 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
+//import React from 'react'
+import { Outlet } from 'react-router'
 
-function Layout({children}) {
+function Layout() {
   return (
     <div className='pt-24 md:pt-36'>
-      {children}
+      <Outlet />
     </div>
   )
 }

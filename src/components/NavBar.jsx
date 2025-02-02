@@ -1,5 +1,4 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router'
 import { FaSearch } from 'react-icons/fa'
 import { CgProfile } from "react-icons/cg";
 import { IoCartOutline } from "react-icons/io5";
@@ -15,17 +14,17 @@ function NavBar() {
             </div>
             <NavLink to='/' className='flex items-center w-44'>
                 <img src={logo} alt="Logo" width={50} height={50}/>
-                <p className='px-2 font-Roboto text-Headline_one text-Dark'>Woo</p>
+                <p className='px-2 font-Roboto text-Headline_one text-Dark'>Avion</p>
                 <img src={logo} alt="Logo" width={50} height={50}/>
             </NavLink>
             <ul className='hidden sm:flex justify-around text-botton font-Roboto'>
                 <li className='pr-6 flex items-center'>
-                    <NavLink to='/Shopping' className='pl-2'>
+                    <NavLink to='/shopping' className='pl-2'>
                         <IoCartOutline size={24} />
                     </NavLink>
                 </li>
                 <li className='pr-6 flex items-center'>                    
-                    <NavLink to='/Account' className='pl-2'>
+                    <NavLink to='/account' className='pl-2'>
                         <CgProfile size={24} />
                     </NavLink>
                 </li>
@@ -36,19 +35,34 @@ function NavBar() {
         </section>
         <section className='sm:flex justify-center h-[66px] hidden'>
             <ul className='md:flex md:items-center md:text-Dark sm:hidden font-Open_Sans text-Headline_four'>
-                <li className='px-4'>
-                    <NavLink to='/Clothing'>
-                        Clothing
+            <li className='px-4'>
+                    <NavLink to='/all'>
+                        All
                     </NavLink>
                 </li>
                 <li className='px-4'>
-                    <NavLink to='/house'>
-                        House
+                    <NavLink to="/clothes">
+                        Clothes
                     </NavLink>
                 </li>
                 <li className='px-4'>
-                    <NavLink to='/jewelry'>
-                        Jewelry
+                    <NavLink to='/electronics'>
+                        Electronics
+                    </NavLink>
+                </li>
+                <li className='px-4'>
+                    <NavLink to='/forniture'>
+                        Forniture
+                    </NavLink>
+                </li>
+                <li className='px-4'>
+                    <NavLink to='/shoes'>
+                        Shoes
+                    </NavLink>
+                </li>
+                <li className='px-4'>
+                    <NavLink to='/miscellaneous'>
+                        Miscellaneous
                     </NavLink>
                 </li>
             </ul>
