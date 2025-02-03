@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
+import { AvionProvider } from './context/AvionContext.jsx'
 import NavBar from './components/NavBar.jsx'
 import Layout from './components/Layout.jsx'
 
@@ -16,7 +17,7 @@ import Shoes from './pages/categories/Shoes.jsx'
 function App() {
 
   return (
-    <>
+    <AvionProvider>
       <BrowserRouter>
         <NavBar />
         <Routes>
@@ -33,7 +34,7 @@ function App() {
         </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </AvionProvider>
   )
 }
 

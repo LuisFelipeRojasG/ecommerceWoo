@@ -11,7 +11,7 @@ function Home() {
   useEffect(() => {
       // This code will run once when the component mounts
       fetch('https://api.escuelajs.co/api/v1/categories')
-          .then(response => console.log(response.json()))
+          .then(response => response.json())
           .then(data => setData(data))
   }, []); // Empty dependency array means this effect runs once
 

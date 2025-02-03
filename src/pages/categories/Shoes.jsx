@@ -1,23 +1,30 @@
-
-import  { useEffect } from 'react';
+import { useEffect } from 'react'
+import ProductCard from '../../components/ProductCard'
+import useAvionContext from '../../context/UseContext'
+import { allShoes } from '../../api/indexApi';
 
 function Shoes() {
 
-    useEffect(() => {
-        // This code will run once when the component mounts
-        fetch('https://api.escuelajs.co/api/v1/categories/4/products')
-            .then(response => console.log(response.json()))
-            //.then(data => setData(data))
-    }, []); // Empty dependency array means this effect runs once
+    const { getProductsCategory, dataProductsCategory } = useAvionContext();
 
+  useEffect(() => {
+    getProductsCategory(allShoes)
+  }, [])
 
-
-    return (
-        <div>
-            <h1>Shoes Category</h1>
-            <p>Welcome to the Shoes category page!</p>
-        </div>
-    );
+  return (
+    <div className='flex flex-row flex-wrap justify-between px-6 ' > 
+      {
+        dataProductsCategory?.map((product) => (
+          
+          <ProductCard 
+            key={product.id} 
+            image={product.images[0]}
+            title={product.title}
+            price={product.price} />
+        ))
+      }
+    </div>
+  )
 }
 
 export default Shoes;
