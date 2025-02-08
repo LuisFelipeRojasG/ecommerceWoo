@@ -18,9 +18,9 @@ function Clothes() {
           
           <ProductCard 
             key={product.id} 
-            image={product.images[0]}
-            title={product.title}
-            price={product.price} />
+            data={product}
+          />
+          
         ))
       }
     </div>

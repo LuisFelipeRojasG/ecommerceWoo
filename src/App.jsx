@@ -12,6 +12,7 @@ import Electronics from './pages/categories/Electronics.jsx'
 import Forniture from './pages/categories/Forniture.jsx'
 import Miscellaneous from './pages/categories/Miscellaneous.jsx'
 import Shoes from './pages/categories/Shoes.jsx'
+import ProductoDetail from './components/ProductoDetail.jsx'
 
 
 function App() {
@@ -22,17 +23,18 @@ function App() {
         <NavBar />
         <Routes>
           <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/account" element={<Account />} />
-          <Route path="/shopping" element={<Shopping />} />
-          <Route path="/all" element={<All />} />          
-          <Route path="/clothes" element={<Clothes />} />
-          <Route path="/electronics" element={<Electronics />} />
-          <Route path="/forniture" element={<Forniture />} />
-          <Route path="/miscellaneous" element={<Miscellaneous />} />
-          <Route path="/shoes" element={<Shoes />} />
-        </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/shopping" element={<Shopping />} />
+            <Route path="/all" element={<All />} />          
+            <Route path="/clothes" element={<Clothes />} />
+            <Route path="/electronics" element={<Electronics />} />
+            <Route path="/forniture" element={<Forniture />} />
+            <Route path="/miscellaneous" element={<Miscellaneous />} />
+            <Route path="/shoes" element={<Shoes />} />
+          </Route>
         </Routes>
+        <ProductoDetail />
       </BrowserRouter>
     </AvionProvider>
   )
