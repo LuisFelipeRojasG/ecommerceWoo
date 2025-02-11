@@ -12,7 +12,7 @@ function Shoes() {
   }, [])
 
   return (
-    <div className='flex flex-row flex-wrap justify-between px-6 ' > 
+    <div className='grid grid-cols-4 gap-8 justify-items-center p-20' > 
       {
         dataProductsCategory?.map((product) => (
           

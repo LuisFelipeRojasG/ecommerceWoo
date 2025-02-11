@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router'
 import { FaSearch } from 'react-icons/fa'
-import { CgProfile } from "react-icons/cg";
-import { IoCartOutline } from "react-icons/io5";
-import { IoMdMenu } from "react-icons/io";
+import { CgProfile } from 'react-icons/cg'
+import { IoCartOutline } from 'react-icons/io5'
+import { IoMdMenu } from 'react-icons/io'
 import logo from '../assets/group98.png'
 
 function NavBar() {
   return (
-    <nav className='fixed top-0 left-0 right-0 flex flex-col bg-BorderGrey'>
+    <nav className='fixed top-0 left-0 z-10 right-0 flex flex-col bg-BorderGrey'>
         <section className='flex justify-between h-[66px] p-4'>
             <div className='flex items-center justify-center w-[60px] h-[34px]'>
                 <FaSearch color='black' size={24} />

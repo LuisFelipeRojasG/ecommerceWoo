@@ -13,8 +13,6 @@ const AvionProvider = ({ children }) => {
 
   const [productDetail, setProductDetail] = useState([])
 
-  console.log(productDetail)
-
     const getProductsCategory = async (url) => {
       try {
         const response = await fetch(url)

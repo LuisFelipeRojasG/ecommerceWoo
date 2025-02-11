@@ -12,7 +12,6 @@ import Electronics from './pages/categories/Electronics.jsx'
 import Forniture from './pages/categories/Forniture.jsx'
 import Miscellaneous from './pages/categories/Miscellaneous.jsx'
 import Shoes from './pages/categories/Shoes.jsx'
-import ProductoDetail from './components/ProductoDetail.jsx'
 
 
 function App() {
@@ -33,8 +32,8 @@ function App() {
             <Route path="/miscellaneous" element={<Miscellaneous />} />
             <Route path="/shoes" element={<Shoes />} />
           </Route>
+          
         </Routes>
-        <ProductoDetail />
       </BrowserRouter>
     </AvionProvider>
   )

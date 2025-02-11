@@ -55,15 +55,15 @@ export default {
           fontWeight: '500',
           lineHeight: '150%'
         }],
-        Body_small: ['14px', {
+        Body_small: ['16px', {
           fontWeight: '400',
           lineHeight: '150%'
         }],
-        Body_medium: ['16px', {
+        Body_medium: ['20px', {
           fontWeight: '400',
           lineHeight: '150%'
         }],
-        Body_large: ['18px', {
+        Body_large: ['24px', {
           fontWeight: '400',
           lineHeight: '150%'
         }]
