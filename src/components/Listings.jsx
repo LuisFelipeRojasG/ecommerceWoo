@@ -1,10 +1,36 @@
-//import CardImage from '../components/CardImage'
+import { useEffect } from 'react'
+import { useNavigate } from 'react-router'
+import ProductCard from '../components/ProductCard'
+import useAvionContext from '../context/UseContext'
+import { allProductos } from '../api/indexApi'
 
 function Listings() {
+  const navigate = useNavigate();
+  const { getProductsCategory, dataProductsCategory } = useAvionContext();
+
+  useEffect(() => {
+    console.log(getProductsCategory(allProductos))
+  }, [])
+
   return (
     <section className='col-start-1 col-end-5 md:col-end-13 text-center pb-24'>
-        <h1 className='mb-14 text-body2'>Explore new and popular styles</h1>
-        {/*<CardImage />*/}
+        <h1 className='mb-14 text-Headline_two text-Dark'>You might also like</h1>
+        <div className='grid grid-cols-2 gap-8 justify-items-center p-10'>
+          {
+            dataProductsCategory?.slice(0, 4).map(product => (
+              <ProductCard 
+                key={product.id} 
+                data={product}
+              />
+            ))
+          }
+        </div>
+        <button 
+          className='w-full py-4 bg-BorderGrey text-Headline_two text-Dark'
+          onClick={() => navigate('/all')}
+        >
+          View all products collection
+        </button>
     </section>
   )
 }

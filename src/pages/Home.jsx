@@ -1,7 +1,7 @@
-
 import HeroBlock from '../components/HeroBlock'
 import FeatureTop from '../components/FeatureTop'
 import Listings from '../components/Listings'
+import FeatureDown from '../components/FeatureDown'
 
 function Home() {
 
@@ -10,10 +10,7 @@ function Home() {
       <HeroBlock />
       <FeatureTop />
       <Listings />
-      {/* Cuarto Panel */}
-      <div>
-        
-      </div>
+      <FeatureDown />
       {/* Quinto Panel */}
       <div></div>
     </div>

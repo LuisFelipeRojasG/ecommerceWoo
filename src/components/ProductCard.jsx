@@ -20,8 +20,7 @@ function ProductCard( {data} ) {
           <span className='text-Body_large font-Roboto text-Dark mb-2'>{data.title}</span>
           <span className='text-Headline_four font-Roboto'>$ {data.price}</span>
         </p>
-    </article>
-    
+      </article>
     </>
     
   )

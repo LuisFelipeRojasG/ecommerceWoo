@@ -8,10 +8,11 @@ const AvionProvider = ({ children }) => {
 
   //Para abrir y cerrar el modal de detalle de producto
   const [isProductDetailOpen, setIsProductDetailOpen] = useState(false)
-  const openProductDetail = () => { setIsProductDetailOpen(true) }
-  const closeProductDetail = () => { setIsProductDetailOpen(false) }
 
   const [productDetail, setProductDetail] = useState([])
+
+  const [cartProducts, setCartProducts] = useState([])
+
 
     const getProductsCategory = async (url) => {
       try {
@@ -28,16 +29,16 @@ const AvionProvider = ({ children }) => {
   
   return (
     <AvionContext.Provider 
-    value={{
-        getProductsCategory,
-        dataProductsCategory,
-        openProductDetail,
-        closeProductDetail,
-        isProductDetailOpen,
-        setIsProductDetailOpen,
-        productDetail,
-        setProductDetail
-    }}
+      value={{
+          getProductsCategory,
+          dataProductsCategory,
+          isProductDetailOpen,
+          setIsProductDetailOpen,
+          productDetail,
+          setProductDetail,
+          cartProducts,
+          setCartProducts
+      }}
     >
         {children}
     </AvionContext.Provider>
