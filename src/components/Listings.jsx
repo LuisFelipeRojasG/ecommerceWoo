@@ -15,7 +15,7 @@ function Listings() {
   return (
     <section className='col-start-1 col-end-5 md:col-end-13 text-center pb-24'>
         <h1 className='mb-14 text-Headline_two text-Dark'>You might also like</h1>
-        <div className='grid grid-cols-2 gap-8 justify-items-center p-10'>
+        <div className='grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center p-10'>
           {
             dataProductsCategory?.slice(0, 4).map(product => (
               <ProductCard 

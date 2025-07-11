@@ -4,7 +4,6 @@ import NavBar from './components/NavBar.jsx'
 import Layout from './components/Layout.jsx'
 
 import Home from './pages/Home.jsx'
-import Account from './pages/Account.jsx'
 import Shopping from './pages/Shopping.jsx'
 import Clothes from './pages/categories/Clothes.jsx'
 import All from './pages/categories/All.jsx'
@@ -23,7 +22,6 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
-            <Route path="/account" element={<Account />} />
             <Route path="/shopping" element={<Shopping />} />
             <Route path="/all" element={<All />} />          
             <Route path="/clothes" element={<Clothes />} />

@@ -24,16 +24,14 @@ function NavBar() {
                     </NavLink>
                 </li>
                 <li className='pr-6 flex items-center'>                    
-                    <NavLink to='/account' className='pl-2'>
-                        <CgProfile size={24} />
-                    </NavLink>
+                    <CgProfile size={24} />
                 </li>
             </ul>
             <div className='sm:hidden flex items-center'>
                 <IoMdMenu size={50} />
             </div>
         </section>
-        <section className='sm:flex justify-center h-[66px] hidden'>
+        <section className='hidden md:flex justify-center h-[66px]'>
             <ul className='md:flex md:items-center md:text-Dark sm:hidden font-Open_Sans text-Headline_four'>
             <li className='px-4'>
                     <NavLink to='/all'>
