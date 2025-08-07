@@ -3,7 +3,6 @@ import FeatureTop from '../components/FeatureTop'
 import Listings from '../components/Listings'
 import FeatureDown from '../components/FeatureDown'
 import EmailSignUp from '../components/EmailSignUp'
-import Footer from '../components/Footer'
 
 function Home() {
 
@@ -16,7 +15,6 @@ function Home() {
         <FeatureDown />
       </div>
       <EmailSignUp />
-      <Footer />
     </div>
     
   )

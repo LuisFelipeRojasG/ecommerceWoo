@@ -7,7 +7,7 @@ import logo from '../assets/group98.png'
 
 function NavBar() {
   return (
-    <nav className='fixed top-0 left-0 z-10 right-0 flex flex-col bg-BorderGrey'>
+    <nav className='fixed top-0 w-full flex flex-col bg-BorderGrey'>
         <section className='flex justify-between h-[66px] p-4'>
             <div className='flex items-center justify-center w-[60px] h-[34px]'>
                 <FaSearch color='black' size={24} />
@@ -17,7 +17,7 @@ function NavBar() {
                 <p className='px-2 font-Roboto text-Headline_one text-Dark'>Avion</p>
                 <img src={logo} alt="Logo" width={50} height={50}/>
             </NavLink>
-            <ul className='hidden sm:flex justify-around text-botton font-Roboto'>
+            <ul className='hidden md:flex justify-around text-botton font-Roboto'>
                 <li className='pr-6 flex items-center'>
                     <NavLink to='/shopping' className='pl-2'>
                         <IoCartOutline size={24} />
@@ -27,7 +27,7 @@ function NavBar() {
                     <CgProfile size={24} />
                 </li>
             </ul>
-            <div className='sm:hidden flex items-center'>
+            <div className='md:hidden flex items-center'>
                 <IoMdMenu size={50} />
             </div>
         </section>

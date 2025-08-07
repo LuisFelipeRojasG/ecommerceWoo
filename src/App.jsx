@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
 import { AvionProvider } from './context/AvionContext.jsx'
-import NavBar from './components/NavBar.jsx'
 import Layout from './components/Layout.jsx'
 
 import Home from './pages/Home.jsx'
@@ -18,7 +17,6 @@ function App() {
   return (
     <AvionProvider>
       <BrowserRouter>
-        <NavBar />
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
@@ -30,7 +28,6 @@ function App() {
             <Route path="/miscellaneous" element={<Miscellaneous />} />
             <Route path="/shoes" element={<Shoes />} />
           </Route>
-          
         </Routes>
       </BrowserRouter>
     </AvionProvider>

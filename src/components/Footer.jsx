@@ -3,8 +3,8 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <section className="flex flex-col items-center justify-center bg-DarkPrimary text-Light p-10">
-        <div className="w-full flex flex-col md:flex-row items-center justify-around gap-4 mb-6">
+    <section className="w-full flex flex-col items-center justify-center bg-DarkPrimary text-Light p-10">
+        <div className="flex flex-col lg:flex-row items-center justify-around gap-4 mb-6">
             <div className="flex justify-center gap-4 my-10">
                 <div className="mx-4 md:mr-20">
                     <h3 className="pb-2 text-Headline_three">Menu</h3>
