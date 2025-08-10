@@ -26,31 +26,25 @@ function ProductDetail() {
 
   
     return (
-        <div className='absolute inset-0 flex flex-row items-center justify-around  w-50vw h-50vh m-[260px] px-10 bg-White bg-opacity-90'>
-            <figure>
-                <img className='w-[600px] h-[600px]' src={productDetail.images[0]} alt={productDetail.title} />
+        <div className='col-start-1 col-end-5 md:col-end-13 md:flex lg:w-[900px] xl:col-start-3 2xl:col-start-4 pb-20'>
+            <figure className='min-w-[300px] min-h-[300px] mr-10'>
+                <img className='md:w-auto md:h-[600px] mt-auto' src={productDetail.images[0]} alt={productDetail.title} />
             </figure>
-            <div className='grid grid-rows-7 auto-rows-auto w-[620px] h-auto gap-4 p-4'>
-                <button 
-                    onClick={() => setIsProductDetailOpen(false)} 
-                    className='flex justify-end h-10'
-                    >
-                        <IoMdClose size={40}/>
-                </button>
-                <h2 className='h-auto text-Headline_one font-Roboto text-Dark'>{productDetail.title}</h2>
-                <p className='text-Headline_three font-Roboto'>$ {productDetail.price}</p>
-                <div className='row-start-4 row-end-6'>
+            <div className='grid grid-rows-5 auto-rows-auto h-auto gap-4 p-4'>
+                <h2 className='row-start-1 h-auto text-Headline_one font-Roboto text-Dark'>{productDetail.title}</h2>
+                <p className='row-start-2 text-Headline_three font-Roboto'>$ {productDetail.price}</p>
+                <div className='row-start-3 row-span-2'>
                     <h3 className='pb-8 text-Body_medium font-Roboto'>Product Description</h3>
                     <span className='text-Body_small font-Roboto'>
                         {productDetail.description}
                     </span>
                 </div>
-                <form action="">
-                    <div>
-                        <h3 className='row-start-6 text-Body_small font-Roboto'>Quantity</h3>
-                        <input id='quantity' type='number' onChange={onChangeQuantity} placeholder='1' className='row-start-7 w-1/4 border-8 pl-4' />
+                <form className='row-start-5 flex justify-between items-center gap-2'>
+                    <div className='flex justify-between items-center gap-2'>
+                        <h3 className='pr-8 text-Body_small font-Roboto'>Quantity</h3>
+                        <input id='quantity' type='number' onChange={onChangeQuantity} placeholder='1' className='w-10 h-10 border-8 text-center' />
                     </div>
-                    <button onClick={addProductToCart} className='row-start-7 w-36 h-16 bg-Primary text-Light font-Roboto text-Headline_five'> 
+                    <button onClick={addProductToCart} className='w-36 h-16 bg-Primary text-Light font-Roboto text-Headline_five'> 
                         Add to cart
                     </button>
                 </form>

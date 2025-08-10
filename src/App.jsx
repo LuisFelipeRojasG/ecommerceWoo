@@ -10,6 +10,7 @@ import Electronics from './pages/categories/Electronics.jsx'
 import Forniture from './pages/categories/Forniture.jsx'
 import Miscellaneous from './pages/categories/Miscellaneous.jsx'
 import Shoes from './pages/categories/Shoes.jsx'
+import Detail from './pages/Detail.jsx'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/forniture" element={<Forniture />} />
             <Route path="/miscellaneous" element={<Miscellaneous />} />
             <Route path="/shoes" element={<Shoes />} />
+            <Route path="/detail" element={<Detail />} />
           </Route>
         </Routes>
       </BrowserRouter>

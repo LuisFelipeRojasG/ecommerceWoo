@@ -6,8 +6,6 @@ const AvionProvider = ({ children }) => {
   //Para guardar los productos de la categoria seleccionada
   const [dataProductsCategory, setDataProductsCategory] = useState([])
 
-  //Para abrir y cerrar el modal de detalle de producto
-  const [isProductDetailOpen, setIsProductDetailOpen] = useState(false)
 
   const [productDetail, setProductDetail] = useState([])
 
@@ -32,8 +30,6 @@ const AvionProvider = ({ children }) => {
       value={{
           getProductsCategory,
           dataProductsCategory,
-          isProductDetailOpen,
-          setIsProductDetailOpen,
           productDetail,
           setProductDetail,
           cartProducts,
