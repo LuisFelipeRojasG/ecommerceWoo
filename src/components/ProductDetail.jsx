@@ -1,6 +1,5 @@
 
 import useAvionContext from '../context/UseContext'
-import { IoMdClose } from "react-icons/io"
 import { useState } from 'react'
 
 function ProductDetail() {
@@ -42,7 +41,7 @@ function ProductDetail() {
                 <form className='row-start-5 flex justify-between items-center gap-2'>
                     <div className='flex justify-between items-center gap-2'>
                         <h3 className='pr-8 text-Body_small font-Roboto'>Quantity</h3>
-                        <input id='quantity' type='number' onChange={onChangeQuantity} placeholder='1' className='w-10 h-10 border-8 text-center' />
+                        <input id='quantity' type='number' onChange={onChangeQuantity} placeholder='1' className='w-14 h-12 border-8 text-center' />
                     </div>
                     <button onClick={addProductToCart} className='w-36 h-16 bg-Primary text-Light font-Roboto text-Headline_five'> 
                         Add to cart

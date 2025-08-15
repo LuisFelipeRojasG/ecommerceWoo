@@ -11,6 +11,8 @@ const AvionProvider = ({ children }) => {
 
   const [cartProducts, setCartProducts] = useState([])
 
+  const [openMenu, setOpenMenu] = useState('hidden');
+
 
     const getProductsCategory = async (url) => {
       try {
@@ -33,7 +35,9 @@ const AvionProvider = ({ children }) => {
           productDetail,
           setProductDetail,
           cartProducts,
-          setCartProducts
+          setCartProducts,
+          openMenu,
+          setOpenMenu
       }}
     >
         {children}

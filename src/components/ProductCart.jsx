@@ -6,7 +6,7 @@ function ProductCart( ) {
     const { cartProducts } = useAvionContext();
 
   return (
-    <section className='flex flex-col gap-6 px-6'>
+    <section className='flex flex-col gap-6 px-6 pb-32'>
         <h1 className='text-Headline_three font-Roboto'>
             Your shopping cart
         </h1>

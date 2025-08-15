@@ -3,9 +3,14 @@ import { FaSearch } from 'react-icons/fa'
 import { CgProfile } from 'react-icons/cg'
 import { IoCartOutline } from 'react-icons/io5'
 import { IoMdMenu } from 'react-icons/io'
+import useAvionContext from '../context/UseContext'
+import MobileMenu from './MobileMenu'
 import logo from '../assets/group98.png'
 
 function NavBar() {
+
+    const { openMenu, setOpenMenu } = useAvionContext();
+
   return (
     <nav className='fixed top-0 w-full flex flex-col bg-BorderGrey'>
         <section className='flex justify-between h-[66px] p-4'>
@@ -27,7 +32,9 @@ function NavBar() {
                     <CgProfile size={24} />
                 </li>
             </ul>
-            <div className='md:hidden flex items-center'>
+            <div onClick={() => {
+                openMenu === 'hidden' ? setOpenMenu('flex') : setOpenMenu('hidden')
+            }} className='md:hidden flex items-center'>
                 <IoMdMenu size={50} />
             </div>
         </section>
@@ -64,6 +71,9 @@ function NavBar() {
                     </NavLink>
                 </li>
             </ul>
+        </section>
+        <section className={`justify-center h-auto ${openMenu}`}>
+            <MobileMenu />
         </section>
     </nav>
   )
